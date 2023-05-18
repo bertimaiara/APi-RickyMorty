@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+
+.body {
+  font-family: "Archivo Black", Arial, sans-serif;
+}
+
+#icone {
+  width: 40px;
+  height: 40px;
+}
+
+#header {
+  text-align: center;
+  font-size: 100px;
+  font-family: "Archivo Black", sans-serif;
+  color: #105718;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+#pesquisar {
+  width: 350px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 100px;
+}
+
+.rick-and-morty{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+#footer {
+  background-color: #1f2821;
+  position: absolute;
+  color: #fff;
+  text-align: center;
+  flex-shrink: 0;
+  height: 300px;
+  width: 100%;
+}
+
+.container,
+container p {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+#informacoesRodape{
+  padding: 5%;
+}
+
+#creditos {
+  margin-bottom: 0;
+  margin-top: 50px;
+}
