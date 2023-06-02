@@ -1,8 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
 }
 
 body {
@@ -10,20 +8,24 @@ body {
   font-size: 100%;
 }
 
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 #icon {
   width: 40px;
   height: 40px;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
-#header {
+.container-img {
+  display: flex;
+  height: 100px;
   color: #105718;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 800;
 }
 
 .container {
@@ -33,19 +35,29 @@ header {
   align-items: center;
   flex-direction: column;
 }
-/*formulario de busca*/
 
+/*formulario de busca*/
 .form {
   display: flex;
   margin: 2rem;
 }
 
+label {
+  display: flex;
+}
+
 .form input {
-  padding: 1rem;
-  outline: none;
-  font-size: 1.2rem;
-  border: 1px solid #000;
-  border-radius: 5px;
+  width: 450px;
+  height: 40px;
+  border-radius: 10px;
+  border: solid 2px;
+  border-color: gainsboro;
+  padding-right: 30px;
+}
+
+#lupa {
+  width: 20px;
+  height: 20px;
 }
 
 .form button {
@@ -55,10 +67,63 @@ header {
   background-color: #27ae60;
   color: white;
   margin-left: 10px;
-  padding: 1rem;
-  font-size: 1.2rem;
+  padding: 0.5rem;
+  font-size: 0.1rem;
   cursor: pointer;
   text-transform: uppercase;
+}
+
+/* cards de personagens*/
+.list {
+  width: 109%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 48%;
+  margin: 0.5rem;
+  background-color: white;
+  color: black;
+}
+
+.card-img img {
+  width: 150px;
+  height: 150px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.card-body p {
+  font-size: 14px;
+  justify-content: left;
+  padding: 2px;
+}
+
+#cardBody {
+  display: inline-block;
+  padding: 10px;
+}
+
+h2 {
+  color: #105718;
+  font-weight: 800;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+}
+
+li {
+  font-size: 30px;
+  width: 20px;
 }
 
 /*botoes paginação*/
@@ -78,7 +143,6 @@ header {
   text-transform: uppercase;
 }
 
-/* footer */
 #container {
   display: flex;
   justify-content: center;
@@ -89,6 +153,7 @@ header {
   height: 300px;
 }
 
+/* footer */
 footer {
   background-color: #1f2821;
   color: #fff;
@@ -96,77 +161,24 @@ footer {
   width: 100%;
 }
 
-footer > ul,
-p {
+#lista {
+  padding: 83px;
+}
+
+footer > p {
   display: flex;
   text-align: center;
   list-style: none;
   gap: 20px;
   justify-content: center;
+  font-size: initial;
+  padding: 70px;
 }
 
-#lista {
-  padding: 90px;
+#informations{
+  gap: 30px;
 }
 
 #credits {
-  padding: 30px;
-}
-
-/* cards de personagens*/
-.list {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.card {
-  width: 48%;
-  margin: 0.5rem;
-  background-color: white;
-  color: black;
-}
-
-.card-header {
-  padding: 1rem;
-  min-height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.card-header .card-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.card-img img {
-  width: 150px;
-  height: 150px;
-}
-
-.card-body {
-  padding: 1rem;
-  min-height: 160px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-#cardBody {
-  display: inline-block;
-  padding: 10px;
-}
-
-h2 {
-  color: #105718;
-  padding: 10px;
-}
-
-.card-body p {
-  font-size: 14px;
-  justify-content: left;
-  padding: 5px;
+  padding: 60px;
 }

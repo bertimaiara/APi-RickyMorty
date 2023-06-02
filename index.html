@@ -5,16 +5,22 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <link rel="shortcut icon" href="./images/icon-preto.png"
             type="image/x-icon" />
         <title>API Ricky and Morty</title>
     </head>
     <body>
-        <!--cabeçalho com a imagem-->
         <header>
-            <img id="icon" src="./images/icon.PNG" alt="ícone Rick and Morty" />
-            <div id="header">
-                <h1>API de Rick and Morty</h1>
+            <img id="icon" src="./images/icon.PNG"
+                alt="ícone Rick and Morty" />
+            <!--cabeçalho com a imagem-->
+            <div>
+                <div class="container-img">
+                    <div class="img">
+                        <h1>API de Rick and Morty</h1>
+                    </div>
+                </div>
             </div>
         </header>
 
@@ -23,9 +29,12 @@
             <!--formulario de busca-->
 
             <form class='form' onsubmit="searchCharacters(event)">
-                <input type='text' name='buscar' id='input'
-                    placeholder="Digite o nome do personagem" />
-                <button type='submit'>Buscar</button>
+                <label>
+                    <input type='text' name='buscar' id='input'
+                        placeholder=" Digite o nome do personagem" />
+                    <button type='submit'><img id="lupa" src="./images/lupa.png"
+                            alt="lupa"></button>
+                </label>
             </form>
 
             <!--minha lista de personagens-->
@@ -33,9 +42,9 @@
 
             </section>
             <div class='buttons'>
-                <button id='prev' onclick="previousPage()">Anterior</button>
-                <div id="paginas"></div>
-                <button id='next' onclick="nextPage()">Próximo</button>
+                <button id='prev'>Anterior</button>
+                <p id="pages"></p>
+                <button id='next'>Próximo</button>
             </div>
         </main>
         <div id="container">
@@ -43,21 +52,12 @@
                 alt="rick-and-morty">
         </div>
         <footer>
-            <ul id="lista">
-                <li>
-                    <p>Personagens: 826</p>
-                </li>
-                <li>
-                    <p>Localizações: 126</p>
-                </li>
-                <li>
-                    <p>Episódios: 51</p>
-                </li>
-            </ul>
+            <p id="informations">Personagens: 826 Localizações: 126 Episódios: 51</p>
+
             <p id="credits">Desenvolvido por: <strong>Ricardo Berti</strong> em
                 2023</p>
         </footer>
 
-        <script src="script.js"></script>
+        <script src="main.js"></script>
     </body>
 </html>
