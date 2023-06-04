@@ -54,8 +54,7 @@ function render(characters) {
       statusText = "Desconhecido";
     }
 
-    listCharacters.innerHTML += 
-    `<div class="card">
+    listCharacters.innerHTML += `<div class="card">
       <div id="cardBody" class="card-img">
         <img src="${character.image}" alt="${character.name}" />
       </div>
@@ -73,9 +72,9 @@ function render(characters) {
 
         <p style="color: gray;">Visto a última vez em</p>
 
-        <p><strong>Nome do capítulo</strong></p>
+        <p><strong>Nome do episódio</strong></p>
       </div>
-    </div>`
+    </div>`;
   });
 }
 
